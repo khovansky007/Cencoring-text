@@ -12,7 +12,9 @@ class СencorText:
     def deleteMats(self):
         for curse in self.curse:
             while curse in self.edittext:
-                self.edittext = dt.delete(self.edittext, curse) 
+                self.edittext = dt.delete(self.edittext, curse)
+                if self.edittext == '':
+                    self.edittext = self.edittext  +  ' '
                 break
             continue
         return self.edittext
@@ -41,7 +43,3 @@ class СencorText:
             continue
         
         self.cencoredText = ''.join(new)
-    
-
-# x = СencorText('пидор ебаный иди нахуй соси пидорас', ['бля', 'пидор', 'пидр', 'еб',])
-# print(x.cencoredText)
