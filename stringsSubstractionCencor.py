@@ -24,6 +24,8 @@ class Deleting_string:
         
 
         return (''.join(new))
+    
+    
     # -------TESTs---------
 
     # assert delete('spiderman', 'spi') == 'derman'
