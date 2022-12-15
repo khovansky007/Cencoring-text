@@ -1,4 +1,3 @@
-# для цензуры
 class Deleting_string:
     @staticmethod
     def delete(text: str, minus: str) -> str:
@@ -64,13 +63,3 @@ class Deleting_string:
         
 
         return responce
-
-        
-    # -------TESTs---------
-
-    # assert delete('spiderman', 'spi') == 'derman'
-    # assert delete('rafael raf', 'raf') == 'ael '
-    # assert delete('goverment', 'govno') == 'goverment'
-    # assert delete('z', 'z') == ''
-
-    # ------------------------
