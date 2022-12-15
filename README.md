@@ -1,4 +1,5 @@
 # Cencoring-text
+i didn't used librares. Only my modules.
 
 This midule help to cencored text. Take uncencored(UnCencoredText) text and create list of a curse(curse). To second argument in CencorText use only list! 
 1. Write "from stringsSubstraction import Deleting_string as dt
