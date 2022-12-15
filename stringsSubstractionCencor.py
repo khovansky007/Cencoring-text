@@ -4,7 +4,6 @@ class Deleting_string:
     def delete(text: str, minus: str) -> str:
         new = []
         n = 0
-        Flag = False
 
         for i in text:
             for x in minus[n]:
@@ -21,15 +20,15 @@ class Deleting_string:
             if n < len(minus)-1:
                 n += 1
             else:
-                # Flag = True
                 n = 0
+        
 
         return (''.join(new))
+    # -------TESTs---------
 
-    # # -------TESTs---------
+    # assert delete('spiderman', 'spi') == 'derman'
+    # assert delete('rafael raf', 'raf') == 'ael '
+    # assert delete('goverment', 'govno') == 'goverment'
+    # assert delete('z', 'z') == ''
 
-    assert delete('spiderman', 'spi') == 'derman'
-    assert delete('rafael raf', 'raf') == 'ael '
-    assert delete('goverment', 'govno') == 'goverment'
-
-    # # ------------------------
+    # ------------------------
