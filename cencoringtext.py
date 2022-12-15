@@ -26,6 +26,7 @@ class СencorText:
         new = []
         n = 0
         Flag = 0
+
         for i in UnCencoredText:
             for x in EditText[n]:
                 
@@ -34,11 +35,10 @@ class СencorText:
                     break
                 else:
                     new.append(i)
-                    if n >= len(EditText) - 1:
-                        # Flag = 1
-                        # n -= 1
+                    if n > len(EditText) - 1:
                         new.append(i)
-                    n += 1
+                    if n != len(EditText) - 1:
+                        n += 1
                     break
                 
             # if Flag == 1:
