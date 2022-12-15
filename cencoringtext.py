@@ -9,14 +9,15 @@ class СencorText:
 
         self.edit(self._text, self.deleteMats())
 
-    def deleteMats(self):
+    def deleteMats(self) -> str:
         for curse in self.curse:
             while curse in self.edittext:
                 self.edittext = dt.delete(self.edittext, curse)
-                if self.edittext == '':
-                    self.edittext = self.edittext  +  ' '
                 break
             continue
+        if self.edittext == '':
+            self.edittext = self.edittext  +  ' '
+
         return self.edittext
         
 
@@ -34,12 +35,14 @@ class СencorText:
                 else:
                     new.append(i)
                     if n >= len(EditText) - 1:
-                        Flag = 1
+                        # Flag = 1
+                        # n -= 1
+                        new.append(i)
                     n += 1
                     break
                 
-            if Flag == 1:
-                break
+            # if Flag == 1:
+            #     break
             continue
         
         self.cencoredText = ''.join(new)
